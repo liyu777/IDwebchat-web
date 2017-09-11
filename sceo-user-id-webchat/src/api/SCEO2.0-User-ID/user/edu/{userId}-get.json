@@ -1,0 +1,148 @@
+{
+  "id": 5,
+  "name": "用户教育经历信息查询",
+  "description": "根据当前登录的用户ID(userId)查询该用户的教育经历",
+  "requestType": "1",
+  "requestUrl": "http://192.168.13.34:10011/user/edu/{userId}",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 104,
+      "identifier": "userId",
+      "name": "用户ID,必填",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 389,
+      "identifier": "retCode|-1-1",
+      "name": "成功：1, 失败：0， 未登录：-1",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 244,
+      "identifier": "data|0-5",
+      "name": "教育经历list集合,retCode为1的时候有值",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 252,
+          "identifier": "major",
+          "name": "专业",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 250,
+          "identifier": "endTime",
+          "name": "结束时间",
+          "remark": "@mock=@DATE",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 253,
+          "identifier": "schoolName|1",
+          "name": "学校名称",
+          "remark": "@mock=\"清华大学\",\"北京大学\",\"复旦大学\"",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "array<string>"
+        },
+        {
+          "id": 248,
+          "identifier": "cultureType",
+          "name": "培养类型",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 246,
+          "identifier": "certificateNumber",
+          "name": "证书号码",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 245,
+          "identifier": "beginTime",
+          "name": "开始时间",
+          "remark": "@mock=@DATE",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 247,
+          "identifier": "certificateType",
+          "name": "所获证书类型",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 249,
+          "identifier": "education",
+          "name": "学历",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 254,
+          "identifier": "schoolType",
+          "name": "学校类型",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 255,
+          "identifier": "userId",
+          "name": "关联的用户ID",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 251,
+          "identifier": "id",
+          "name": "ID",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "array<object>"
+    },
+    {
+      "id": 388,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

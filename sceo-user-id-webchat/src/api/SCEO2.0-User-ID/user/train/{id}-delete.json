@@ -1,0 +1,48 @@
+{
+  "id": 174,
+  "name": "用户培训经历删除",
+  "description": "用户培训经历删除",
+  "requestType": "4",
+  "requestUrl": "http://192.168.13.34:10011/user/train/{id}",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 1630,
+      "identifier": "id",
+      "name": "培训经历ID",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 1632,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1633,
+      "identifier": "retCode|-1-1",
+      "name": "成功：1, 失败：0， 未登录：-1",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 1631,
+      "identifier": "data",
+      "name": "无值,为空",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

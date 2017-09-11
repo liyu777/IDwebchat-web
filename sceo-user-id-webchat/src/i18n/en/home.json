@@ -1,0 +1,27 @@
+{
+  "logo": "SCEO",
+  "menu": {
+    "home": "home",
+    "myAccount": "accout",
+    "mySubject": "subject",
+    "myJob": "job",
+    "mySCEO": "SCEO",
+    "setup": "setup",
+    "chatMain": "chatMain"
+  },
+  "nav": {
+    "home": "home",
+    "personal": "personal",
+    "message": "message",
+    "help": "help&Documentation",
+    "lang": "language",
+    "themes": "themes",
+    "exit": "exit"
+  },
+  "confirm": {
+    "title": "Confirm",
+    "message": "Quit?",
+    "exit": "Quit",
+    "cancel": "Cancel"
+  }
+}

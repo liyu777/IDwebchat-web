@@ -1,0 +1,42 @@
+{
+  "menu": {
+    "personal": "information",
+    "basic": "Basic",
+    "detail": "Detail",
+    "edu": "Education",
+    "tran": "Train",
+    "job": "Job",
+    "avatar": "Avatar",
+    "security": "Security",
+    "sceoNumber": "Sceo Number",
+    "certification": "Certification",
+    "phone": "Phone",
+    "email": "Email",
+    "question": "Questions",
+    "password": "Password"
+  },
+  "tips": {
+    "title": "Please improve the information, to facilitate our better service for you",
+    "nickNameLengthErr": "nick name max length: 20",
+    "saveSuccess": "save success"
+  },
+  "label": {
+    "sceoNumber": "Sceo Number",
+    "nickName": "Nick Name",
+    "name": "Name",
+    "certificateType": "Certificate Type",
+    "certificateNumber": "Certificate Number",
+    "mobileNumber": "Phone Number",
+    "email": "Email",
+    "sex": "Sex",
+    "country": "Country",
+    "livePlace": "Live Place",
+    "msg": "Message",
+    "save": "save"
+  },
+  "link": {
+    "certification": "Certification",
+    "changeMobileNumber": "Change Mobile Number",
+    "changeEmail": "Change Email"
+  }
+}

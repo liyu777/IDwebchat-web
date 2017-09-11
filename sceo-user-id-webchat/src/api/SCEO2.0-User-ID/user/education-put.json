@@ -1,0 +1,148 @@
+{
+  "id": 177,
+  "name": "用户教育经历操作",
+  "description": "用户对教育经历的操作,用户传入的信息可能有新增的信息,也有更新的信息,也有删除的信息,根据信息来判断执行不同的操作",
+  "requestType": "3",
+  "requestUrl": "http://192.168.13.34:10011/user/education",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 1658,
+      "identifier": "data|1-5",
+      "name": "教育经历集合",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 1665,
+          "identifier": "id",
+          "name": "教育经历ID,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1659,
+          "identifier": "beginTime",
+          "name": "开始时间,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1661,
+          "identifier": "certificateType",
+          "name": "所获证书",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1660,
+          "identifier": "certificateNumber",
+          "name": "证书号码",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1663,
+          "identifier": "education",
+          "name": "学历",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1662,
+          "identifier": "cultureType",
+          "name": "培养类型",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1664,
+          "identifier": "endTime",
+          "name": "结束时间,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1666,
+          "identifier": "major",
+          "name": "专业",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1667,
+          "identifier": "schoolName",
+          "name": "学校名称,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1668,
+          "identifier": "schoolType",
+          "name": "学校类型",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1669,
+          "identifier": "userId",
+          "name": "关联的用户ID,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "array<object>"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 1670,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1672,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 1671,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

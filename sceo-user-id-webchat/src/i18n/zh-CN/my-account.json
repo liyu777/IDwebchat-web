@@ -1,0 +1,48 @@
+{
+  "menu": {
+    "personal": "个人信息",
+    "basic": "基本资料",
+    "detail": "详细资料",
+    "edu": "教育经历",
+    "tran": "培训经历",
+    "job": "工作经历",
+    "avatar": "头像设置",
+    "security": "账户安全",
+    "sceoNumber": "锐信号",
+    "certification": "实名认证",
+    "phone": "密保手机",
+    "email": "密保邮箱",
+    "question": "密保问题",
+    "password": "登录密码"
+  },
+  "tips": {
+    "title": "请完善一下信息，方便我们更好的为你服务",
+    "nikNameLengthErr": "昵称字符长度不能超过20!",
+    "saveSuccess": "保存成功"
+  },
+  "label": {
+    "sceoNumber": "锐信号",
+    "nickName": "昵称",
+    "name": "姓名",
+    "certificateType": "证件类型",
+    "certificateNumber": "证件号码",
+    "mobileNumber": "手机号码",
+    "email": "电子邮箱",
+    "sex": "性别",
+    "country": "国家",
+    "livePlace": "地区",
+    "msg": "个性签名",
+    "save": "保存"
+  },
+  "link": {
+    "certification": "实名认证",
+    "changeMobileNumber": "修改手机号",
+    "changeEmail": "修改邮箱"
+  },
+  "placeholder": {
+    "nickName": "请输入昵称（16个字符以内，不含空格）"
+  },
+  "validateMessage": {
+    "nickName": "昵称不能含有空格"
+  }
+}

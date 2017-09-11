@@ -1,0 +1,148 @@
+{
+  "id": 33,
+  "name": "用户教育经历批量修改",
+  "description": "用户教育经历批量修改,传入多条要修改的数据.可以同时修改",
+  "requestType": "3",
+  "requestUrl": "http://192.168.13.34:10011/user/edu",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 394,
+      "identifier": "data|1-5",
+      "name": "教育经历集合",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 405,
+          "identifier": "userId",
+          "name": "关联的用户ID,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 397,
+          "identifier": "certificateType",
+          "name": "所获证书",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 403,
+          "identifier": "schoolName",
+          "name": "学校名称,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 398,
+          "identifier": "cultureType",
+          "name": "培养类型",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 399,
+          "identifier": "education",
+          "name": "学历",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 401,
+          "identifier": "id",
+          "name": "教育经历ID,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 402,
+          "identifier": "major",
+          "name": "专业",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 404,
+          "identifier": "schoolType",
+          "name": "学校类型",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 396,
+          "identifier": "certificateNumber",
+          "name": "证书号码",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 395,
+          "identifier": "beginTime",
+          "name": "开始时间,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 400,
+          "identifier": "endTime",
+          "name": "结束时间,必填",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "array<object>"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 407,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 406,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 408,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    }
+  ]
+}

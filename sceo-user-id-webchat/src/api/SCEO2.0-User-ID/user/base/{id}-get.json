@@ -1,0 +1,112 @@
+{
+  "id": 173,
+  "name": "获取用户首页基本信息",
+  "description": "",
+  "requestType": "1",
+  "requestUrl": "http://192.168.13.34:10011/user/base/{id}",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 1619,
+      "identifier": "id",
+      "name": "当前用户ID",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 1629,
+      "identifier": "retCode|-1-1",
+      "name": "成功：1, 失败：0， 未登录：-1",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 1628,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1620,
+      "identifier": "data",
+      "name": "一个map对象,包含用户基本信息",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 1625,
+          "identifier": "nameRealFlag|0-1",
+          "name": "实名认证标记",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "number"
+        },
+        {
+          "id": 1626,
+          "identifier": "path",
+          "name": "用户头像路径",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1621,
+          "identifier": "lastLoginTime",
+          "name": "最后登录时间",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1627,
+          "identifier": "signature",
+          "name": "个性签名",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1622,
+          "identifier": "mediaType",
+          "name": "用户头像文件类型",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1623,
+          "identifier": "mobileNumber",
+          "name": "绑定手机号",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1624,
+          "identifier": "name",
+          "name": "首页显示称呼:真名=>昵称=>锐信号=>手机号/邮箱",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "object"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": 36,
+  "name": "用户培新经历批量修改",
+  "description": "用户培训经历批量修改,传入多条要修改的数据.可以同时修改",
+  "requestType": "3",
+  "requestUrl": "http://192.168.13.34:10011/user/train",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 483,
+      "identifier": "data|1-5",
+      "name": "培训经历list集合,retCode为1的时候有值",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 486,
+          "identifier": "certificateType",
+          "name": "所获证书",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 489,
+          "identifier": "schoolName",
+          "name": "培训机构名称",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "array<string>"
+        },
+        {
+          "id": 491,
+          "identifier": "userId",
+          "name": "关联的用户ID",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 488,
+          "identifier": "id",
+          "name": "ID",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 490,
+          "identifier": "trainDirection",
+          "name": "培训方向",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 484,
+          "identifier": "beginTime",
+          "name": "开始时间",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 485,
+          "identifier": "certificateNumber",
+          "name": "证书号码",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 487,
+          "identifier": "endTime",
+          "name": "结束时间",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "array<object>"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 428,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 426,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 427,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

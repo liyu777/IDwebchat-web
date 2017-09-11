@@ -1,0 +1,121 @@
+{
+  "id": 175,
+  "name": "用户培训经历操作",
+  "description": "用户对培训经历的操作,用户传入的信息可能有新增的信息,也有更新的信息,也有删除的信息,根据信息来判断执行不同的操作",
+  "requestType": "3",
+  "requestUrl": "http://192.168.13.34:10011/user/training",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 1634,
+      "identifier": "data|1-5",
+      "name": "培训经历list集合",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 1639,
+          "identifier": "id",
+          "name": "ID,不填则进行插入操作,填了则进行更新操作",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1642,
+          "identifier": "userId",
+          "name": "关联的用户ID",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1635,
+          "identifier": "beginTime",
+          "name": "开始时间",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1636,
+          "identifier": "certificateNumber",
+          "name": "证书号码",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1638,
+          "identifier": "endTime",
+          "name": "结束时间",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1640,
+          "identifier": "schoolName",
+          "name": "培训机构名称",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1637,
+          "identifier": "certificateType",
+          "name": "所获证书",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 1641,
+          "identifier": "trainDirection",
+          "name": "培训方向",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "array<object>"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 1643,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1645,
+      "identifier": "retCode|1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "@mock=1,0,-1,-2",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "array<number>"
+    },
+    {
+      "id": 1644,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

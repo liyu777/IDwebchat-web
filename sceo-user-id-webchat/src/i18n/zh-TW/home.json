@@ -1,0 +1,27 @@
+{
+  "logo": "雲SCEO",
+  "menu": {
+    "home": "首頁",
+    "myAccount": "我的賬戶",
+    "mySubject": "我的資產",
+    "myJob": "我的職場",
+    "mySCEO": "我的SCEO",
+    "setup": "系統設置",
+    "chatMain": "好友列表"
+  },
+  "nav": {
+    "home": "首頁",
+    "personal": "個人中心",
+    "message": "訊息中心",
+    "help": "幫助與文檔",
+    "lang": "語言設置",
+    "themes": "皮膚",
+    "exit": "退出"
+  },
+  "confirm": {
+    "title": "提示",
+    "message": "是否退出",
+    "exit": "退出",
+    "cancel": "取消"
+  }
+}

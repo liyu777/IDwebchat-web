@@ -1,0 +1,121 @@
+{
+  "id": 30,
+  "name": "用户工作经历批量修改",
+  "description": "用户工作经历批量修改,传入多条要修改的数据.可以同时修改",
+  "requestType": "3",
+  "requestUrl": "http://192.168.13.34:10011/user/work",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 460,
+      "identifier": "data|1-5",
+      "name": "用户工作经历list集合",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 464,
+          "identifier": "endTime",
+          "name": "结束时间",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 463,
+          "identifier": "companyPhoneNumber",
+          "name": "公司电话",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 462,
+          "identifier": "companyName",
+          "name": "学校名称",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 465,
+          "identifier": "id",
+          "name": "ID",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 461,
+          "identifier": "beginTime",
+          "name": "开始时间",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 468,
+          "identifier": "workPosition",
+          "name": "工作职位",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 466,
+          "identifier": "remark",
+          "name": "工作描述",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 467,
+          "identifier": "userId",
+          "name": "关联的用户ID",
+          "remark": "",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "array<object>"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 469,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 470,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 471,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    }
+  ]
+}

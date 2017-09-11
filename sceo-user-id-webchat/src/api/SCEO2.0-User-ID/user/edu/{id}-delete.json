@@ -1,0 +1,48 @@
+{
+  "id": 32,
+  "name": "用户教育经历删除",
+  "description": "根据教育经历ID删除一条教育经历记录",
+  "requestType": "4",
+  "requestUrl": "http://192.168.13.34:10011/user/edu/{id}",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 390,
+      "identifier": "id",
+      "name": "教育经历ID",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 391,
+      "identifier": "data",
+      "name": "无值,为空",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 393,
+      "identifier": "retCode|-1-1",
+      "name": "成功：1, 失败：0， 未登录：-1",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 392,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

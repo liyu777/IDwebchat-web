@@ -1,0 +1,57 @@
+{
+  "id": 41,
+  "name": "设置用户的锐信号",
+  "description": "设置当前用户的锐信号",
+  "requestType": "3",
+  "requestUrl": "http://192.168.13.34:10011/user/sceo",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 506,
+      "identifier": "sceoNumber",
+      "name": "要设置的瑞信号",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 505,
+      "identifier": "id",
+      "name": "当前用户ID",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 508,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 509,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 507,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

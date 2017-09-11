@@ -1,0 +1,84 @@
+{
+  "id": 3,
+  "name": "用户基本资料更新",
+  "description": "",
+  "requestType": "3",
+  "requestUrl": "http://192.168.13.34:10011/user/basic",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 1599,
+      "identifier": "country",
+      "name": "国家",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1601,
+      "identifier": "nickName",
+      "name": "昵称",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1598,
+      "identifier": "area",
+      "name": "地区",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1600,
+      "identifier": "id",
+      "name": "用户ID,必填项",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1602,
+      "identifier": "sex",
+      "name": "性别",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 82,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 83,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 81,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

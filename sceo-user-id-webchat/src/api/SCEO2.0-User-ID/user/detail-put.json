@@ -1,0 +1,192 @@
+{
+  "id": 4,
+  "name": "用户详细资料更新",
+  "description": "",
+  "requestType": "3",
+  "requestUrl": "http://192.168.13.34:10011/user/detail",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 1605,
+      "identifier": "blogAddress",
+      "name": "个人博客地址",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1615,
+      "identifier": "politicalOutlook",
+      "name": "政治面貌",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1618,
+      "identifier": "weightSecrecyFalg",
+      "name": "体重保密标记",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1614,
+      "identifier": "placeOfOrigin",
+      "name": "籍贯",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1604,
+      "identifier": "birthdaySecrecyFlag",
+      "name": "出生日期保密标记",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1610,
+      "identifier": "liveAddressDetail",
+      "name": "现住址详细",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1609,
+      "identifier": "id",
+      "name": "当前用户ID",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1603,
+      "identifier": "birthday",
+      "name": "生日日期",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 84,
+      "identifier": "user",
+      "name": "user对象",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "object"
+    },
+    {
+      "id": 1608,
+      "identifier": "hightSecrecyFlag",
+      "name": "身高保密标记",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1613,
+      "identifier": "nation",
+      "name": "民族",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1611,
+      "identifier": "liveAddressDetalSecrecyFlag",
+      "name": "现住址详细保密标记",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1612,
+      "identifier": "liveAddressUnit",
+      "name": "现住址区县",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1617,
+      "identifier": "weight",
+      "name": "体重",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 1607,
+      "identifier": "hight",
+      "name": "身高",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 1616,
+      "identifier": "qq",
+      "name": "QQ号",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 1606,
+      "identifier": "emergencyTelephone",
+      "name": "紧急联系电话",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 101,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 102,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 103,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    }
+  ]
+}

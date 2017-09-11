@@ -1,0 +1,32 @@
+* {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+html,body{
+  height:100%;
+  overflow:hidden;
+  color: #666666;
+  font-size: 14px;
+}
+body{
+  margin: 0;
+  overflow: hidden;
+}
+#app{
+    height: 100%;
+}
+a:link {
+  text-decoration:none;
+  color: #0E6C9C;
+}
+a:visited {
+  text-decoration:none;
+  color: #0E6C9C;
+}
+a:hover {
+  text-decoration:none;
+  color: #0E6C9C;
+}
+a:active {
+  text-decoration:none;
+  color: #0E6C9C;
+}

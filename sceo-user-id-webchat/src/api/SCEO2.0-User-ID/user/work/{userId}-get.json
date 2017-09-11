@@ -1,0 +1,121 @@
+{
+  "id": 28,
+  "name": "用户工作经历信息查询",
+  "description": "根据当前登录的用户ID(userId)查询该用户的工作经历",
+  "requestType": "1",
+  "requestUrl": "http://192.168.13.34:10011/user/work/{userId}",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 374,
+      "identifier": "userId",
+      "name": "用户ID,必填",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 375,
+      "identifier": "data|0-5",
+      "name": "工作经历list集合,retCode为1的时候有值",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 376,
+          "identifier": "beginTime",
+          "name": "开始时间",
+          "remark": "@mock=@DATE",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 377,
+          "identifier": "companyName",
+          "name": "学校名称",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 379,
+          "identifier": "endTime",
+          "name": "结束时间",
+          "remark": "@mock=@DATE",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 382,
+          "identifier": "userId",
+          "name": "关联的用户ID",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 383,
+          "identifier": "workPosition",
+          "name": "工作职位",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 381,
+          "identifier": "remark",
+          "name": "工作描述",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 380,
+          "identifier": "id",
+          "name": "ID",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 378,
+          "identifier": "companyPhoneNumber",
+          "name": "公司电话",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "array<object>"
+    },
+    {
+      "id": 458,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 459,
+      "identifier": "retCode|-1-1",
+      "name": "成功：1, 失败：0， 未登录：-1",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    }
+  ]
+}

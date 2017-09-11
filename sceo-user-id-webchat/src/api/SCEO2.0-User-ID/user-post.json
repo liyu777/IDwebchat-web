@@ -1,0 +1,228 @@
+{
+  "id": 2,
+  "name": "新增用户",
+  "description": "",
+  "requestType": "2",
+  "requestUrl": "http://192.168.13.34:10011/user",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 51,
+      "identifier": "area",
+      "name": "地区",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 62,
+      "identifier": "nation",
+      "name": "民族",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 57,
+      "identifier": "hight",
+      "name": "身高（CM）",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 63,
+      "identifier": "nickName",
+      "name": "昵称",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 67,
+      "identifier": "secoNumber",
+      "name": "锐信号",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 52,
+      "identifier": "birthday",
+      "name": "出生日期",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 58,
+      "identifier": "hightSecrecyFlag",
+      "name": "身高保密标记",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 71,
+      "identifier": "weightSecrecyFalg",
+      "name": "体重密保标记",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 61,
+      "identifier": "liveAddressUnit",
+      "name": "现住址区县",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 55,
+      "identifier": "country",
+      "name": "国家",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 60,
+      "identifier": "liveAddressDetalSecrecyFlag",
+      "name": "现住址详细保密标记",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 69,
+      "identifier": "state",
+      "name": "状态",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 68,
+      "identifier": "sex",
+      "name": "性别",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 56,
+      "identifier": "emergencyTelephone",
+      "name": "紧急联系电话",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 66,
+      "identifier": "qq",
+      "name": "QQ",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 64,
+      "identifier": "placeOfOrigin",
+      "name": "籍贯",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 54,
+      "identifier": "blogAddress",
+      "name": "个人博客地址",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 65,
+      "identifier": "politicalOutlook",
+      "name": "政治面貌",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 59,
+      "identifier": "liveAddressDetail",
+      "name": "现住址详细",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 53,
+      "identifier": "birthdaySecrecyFlag",
+      "name": "出生日期保密标记",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 70,
+      "identifier": "weight",
+      "name": "体重",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 73,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 72,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 74,
+      "identifier": "data",
+      "name": "retCode为-2的时候有值,提示校验失败信息",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

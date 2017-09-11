@@ -1,0 +1,42 @@
+{
+  "menu": {
+    "personal": "個人信息",
+    "basic": "基本資料",
+    "detail": "詳細資料",
+    "edu": "教育經歷",
+    "tran": "培訓經歷",
+    "job": "工作經歷",
+    "avatar": "頭像設置",
+    "security": "賬戶安全",
+    "sceoNumber": "銳信號",
+    "certification": "實名認證",
+    "phone": "密保手機",
+    "email": "密保郵箱",
+    "question": "密保問題",
+    "password": "登錄密碼"
+  },
+  "tips": {
+    "title": "請完善一下信息，方便我們更好的為您服務",
+    "nikNameLengthErr": "暱稱長度不能超過20!",
+    "saveSuccess": "保存成功"
+  },
+  "label": {
+    "sceoNumber": "銳信號",
+    "nickName": "暱稱",
+    "name": "姓名",
+    "certificateType": "證件類型",
+    "certificateNumber": "證件號碼",
+    "mobileNumber": "手機號碼",
+    "email": "電子郵箱",
+    "sex": "性別",
+    "country": "國家",
+    "livePlace": "地區",
+    "msg": "個性簽名",
+    "save": "保存"
+  },
+  "link": {
+    "certification": "實名認證",
+    "changeMobileNumber": "修改手機號",
+    "changeEmail": "修改郵箱"
+  }
+}

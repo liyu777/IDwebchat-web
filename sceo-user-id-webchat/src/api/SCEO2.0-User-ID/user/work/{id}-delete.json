@@ -1,0 +1,48 @@
+{
+  "id": 29,
+  "name": "用户工作经历删除",
+  "description": "根据工作经历ID,删除对应的一条工作记录信息",
+  "requestType": "4",
+  "requestUrl": "http://192.168.13.34:10011/user/work/{id}",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 384,
+      "identifier": "id",
+      "name": "工作经历ID,必填",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 386,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    },
+    {
+      "id": 387,
+      "identifier": "retCode|-2-1",
+      "name": "成功：1, 失败：0， 未登录：-1，验证失败：-2",
+      "remark": "@mock=1,0,-1,-2",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 385,
+      "identifier": "data",
+      "name": "无值,为空",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

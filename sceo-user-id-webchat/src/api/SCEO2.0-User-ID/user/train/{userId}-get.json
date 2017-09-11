@@ -1,0 +1,121 @@
+{
+  "id": 37,
+  "name": "用户培训经历信息查询",
+  "description": "根据当前登录的用户ID(userId)查询该用户的培训经历",
+  "requestType": "1",
+  "requestUrl": "http://192.168.13.34:10011/user/train/{userId}",
+  "responseTemplate": "",
+  "requestParameterList": [
+    {
+      "id": 429,
+      "identifier": "userId",
+      "name": "关联的用户ID,必填",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ],
+  "responseParameterList": [
+    {
+      "id": 440,
+      "identifier": "retCode|-1-1",
+      "name": "成功：1, 失败：0， 未登录：-1",
+      "remark": "",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "number"
+    },
+    {
+      "id": 430,
+      "identifier": "data|0-5",
+      "name": "培训经历list集合,retCode为1的时候有值",
+      "remark": "",
+      "parameterList": [
+        {
+          "id": 436,
+          "identifier": "schoolName",
+          "name": "培训机构名称",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 438,
+          "identifier": "userId",
+          "name": "关联的用户ID",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 433,
+          "identifier": "certificateType",
+          "name": "所获证书",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 432,
+          "identifier": "certificateNumber",
+          "name": "证书号码",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 434,
+          "identifier": "endTime",
+          "name": "结束时间",
+          "remark": "@mock=@DATE",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 431,
+          "identifier": "beginTime",
+          "name": "开始时间",
+          "remark": "@mock=@DATE",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 435,
+          "identifier": "id",
+          "name": "ID",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        },
+        {
+          "id": 437,
+          "identifier": "trainDirection",
+          "name": "培训方向",
+          "remark": "@mock=@WORD",
+          "parameterList": [],
+          "validator": "",
+          "dataType": "string"
+        }
+      ],
+      "validator": "",
+      "dataType": "array<object>"
+    },
+    {
+      "id": 439,
+      "identifier": "errMsg",
+      "name": "retCode不为1的时候有值",
+      "remark": "@mock=@WORD",
+      "parameterList": [],
+      "validator": "",
+      "dataType": "string"
+    }
+  ]
+}

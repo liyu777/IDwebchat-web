@@ -1,0 +1,27 @@
+{
+	"logo": "云SCEO",
+	"menu": {
+		"home": "首页",
+		"myAccount": "我的账户",
+		"mySubject": "我的资产",
+		"myJob": "我的职场",
+		"mySCEO": "我的SCEO",
+		"setup": "系统设置",
+		"chatMain": "好友列表"
+	},
+	"nav": {
+		"home": "首页",
+		"personal": "个人中心",
+		"message": "消息中心",
+		"help": "帮助与文档",
+		"lang": "语言设置",
+		"themes": "皮肤",
+		"exit": "退出"
+	},
+	"confirm": {
+		"title": "提示",
+		"message": "是否退出？",
+		"exit": "退出",
+		"cancel": "取消"
+	}
+}
